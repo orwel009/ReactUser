@@ -22,20 +22,21 @@ const ViewAll = () => {
                                     <th scope="col">Website</th>
                                   </tr>
                                 </thead>
-                                </table>
+                                <tbody>
                         {data.map(
                             (value,index) => {
-                                return  <table class="table">
-                                  <tr>
+                                return  <tr>
                                     <th>{value.name}</th>
                                     <td>{value.username}</td>
                                     <td>{value.email}</td>
                                     <td>{value.phone}</td>
                                     <td>{value.website}</td>
                                   </tr>
-                              </table>
+                              
                             }
                         )}
+                        </tbody>
+                        </table>
                     </div>
 
                 </div>
